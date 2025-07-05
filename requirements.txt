@@ -1,0 +1,10 @@
+# requirements.txt
+# Library utama
+discord.py==2.3.2
+requests==2.31.0
+
+# HD Wallet derivation
+bip-utils==2.6.0
+
+# Tambahan
+python-dotenv==1.0.0
