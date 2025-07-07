@@ -23,6 +23,15 @@ def _save_users(data):
         with open(USER_DATA_FILE, "w") as f:
             json.dump(data, f, indent=2)
 
+def get_all_user_ids() -> list:
+    if not os.path.exists(USER_DATA_FILE):
+        return []
+
+    with open(USER_DATA_FILE, "r") as f:
+        users = json.load(f)
+
+    return list(users.keys())
+
 def get_user_address(user_id: str, symbol: str) -> str:
     data = _load_users()
     return data.get(user_id, {}).get(symbol, {}).get("address")
