@@ -21,6 +21,7 @@
 ---
 
 ## 📁 Struktur Proyek
+```
 ├── bot.py # Entry point utama bot
 ├── commands/ # Folder semua command modular
 │ ├── balance.py
@@ -49,7 +50,7 @@
 │ ├── transactions.log # Log internal tip, deposit, withdraw
 ├── config.py # Konfigurasi bot (TOKEN, API_PROVIDER, SUPPORTED_COINS)
 └── README.md
-
+```
 
 ## teknologi
 
